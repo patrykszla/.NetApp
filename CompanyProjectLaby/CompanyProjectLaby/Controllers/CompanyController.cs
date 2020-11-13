@@ -17,13 +17,12 @@ namespace CompanyProjectLaby.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(CompanyModel company)
+        public IActionResult Index(CompanyModel companyModel)
         {
-            var viewModel = new CompanyAddedViewModel
-            {
-                NumberOfCharsInName = company.Name.Length,
-                NumberOfCharsInDescription = company.Description.Length,
-                IsHidden = !company.IsVisible
+            var viewModel = new CompanyAddedViewModel {
+                NumberOfCharsInName = companyModel.Name.Length,
+                NumberOfCharsInDescription = companyModel.Description.Length,
+                IsHidden = !companyModel.IsVisible
             };
             return View("CompanyAdded", viewModel);
         }

@@ -1,5 +1,7 @@
 ﻿@model CompanyModel
+
 <h1>Company management</h1>
+
 <h2>Add new company</h2>
 
 
@@ -8,7 +10,7 @@
 {
     <div classs="form-group">
         @Html.LabelFor(x => x.Name, "Company name")
-        @Html.LabelFor(x => x.Name, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
     </div>
     <div class="form-group">
         @Html.LabelFor(x => x.Description, "Company description")
@@ -16,9 +18,14 @@
     </div>
     <div class="form-group form-check">
         @Html.CheckBoxFor(x => x.IsVisible, new { @class = "form-check-input" })
-        @Html.LabelFor(x => x.IsVisible, "Visible?", new { @class = "fomr-check-label" })
+        @Html.LabelFor(x => x.IsVisible, "Visible?", new { @class = "form-check-label" })
     </div>
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Add Company</button>
     </div>
+}
+
+
+@section Scripts{
+    <script src="~/js/ajaxAction.js"></script>
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\patry\\source\\repos\\CompanyProjectLaby\\CompanyProjectLaby\\CompanyProjectLaby.csproj": {}
+    "C:\\Users\\patry\\Desktop\\.NetApp\\CompanyProjectLaby\\CompanyProjectLaby\\CompanyProjectLaby.csproj": {}
   },
   "projects": {
-    "C:\\Users\\patry\\source\\repos\\CompanyProjectLaby\\CompanyProjectLaby\\CompanyProjectLaby.csproj": {
+    "C:\\Users\\patry\\Desktop\\.NetApp\\CompanyProjectLaby\\CompanyProjectLaby\\CompanyProjectLaby.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patry\\source\\repos\\CompanyProjectLaby\\CompanyProjectLaby\\CompanyProjectLaby.csproj",
+        "projectUniqueName": "C:\\Users\\patry\\Desktop\\.NetApp\\CompanyProjectLaby\\CompanyProjectLaby\\CompanyProjectLaby.csproj",
         "projectName": "CompanyProjectLaby",
-        "projectPath": "C:\\Users\\patry\\source\\repos\\CompanyProjectLaby\\CompanyProjectLaby\\CompanyProjectLaby.csproj",
+        "projectPath": "C:\\Users\\patry\\Desktop\\.NetApp\\CompanyProjectLaby\\CompanyProjectLaby\\CompanyProjectLaby.csproj",
         "packagesPath": "C:\\Users\\patry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patry\\source\\repos\\CompanyProjectLaby\\CompanyProjectLaby\\obj\\",
+        "outputPath": "C:\\Users\\patry\\Desktop\\.NetApp\\CompanyProjectLaby\\CompanyProjectLaby\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -41,6 +41,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
