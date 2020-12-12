@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using CompanyProjectLaby.Database;
+
+
 
 namespace CompanyProjectLaby
 {
@@ -23,6 +27,8 @@ namespace CompanyProjectLaby
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<ExchangesDbContext>(options => options
+            .UseSqlServer(Configuration.GetConnectionString("companyDB")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -8,6 +8,8 @@
 
 @using (Html.BeginForm())
 {
+    <div id="success-alert" class="alert alert-success" style="display: none">Item Added successfully</div>
+    
     <div classs="form-group">
         @Html.LabelFor(x => x.Name, "Company name")
         @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
