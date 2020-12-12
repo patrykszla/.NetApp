@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using CompanyProjectLaby.Entities;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace CompanyProjectLaby.Controllers
 {
     public class CompanyController : Controller
@@ -20,7 +21,7 @@ namespace CompanyProjectLaby.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Add()
         {
             return View();
         }
@@ -36,17 +37,14 @@ namespace CompanyProjectLaby.Controllers
             };
             _dbContext.Items.Add(entity);
             _dbContext.SaveChanges();
+
+            return RedirectToAction("AddConfirmation", new { itemId = entity.Id });
         }
 
-        [HttpPost]
-        public IActionResult Index(CompanyModel companyModel)
+        [HttpGet]
+        public IActionResult AddConfirmation(int itemId)
         {
-            var viewModel = new CompanyAddedViewModel {
-                NumberOfCharsInName = companyModel.Name.Length,
-                NumberOfCharsInDescription = companyModel.Description.Length,
-                IsHidden = !companyModel.IsVisible
-            };
-            return View("CompanyAdded", viewModel);
+            return View(itemId);
         }
     }
 }

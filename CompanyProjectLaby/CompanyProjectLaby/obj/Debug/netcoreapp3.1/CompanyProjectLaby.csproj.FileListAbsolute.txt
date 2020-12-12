@@ -183,3 +183,4 @@ C:\Users\patry\Desktop\.NetApp\CompanyProjectLaby\CompanyProjectLaby\bin\Debug\n
 C:\Users\patry\Desktop\.NetApp\CompanyProjectLaby\CompanyProjectLaby\obj\Debug\netcoreapp3.1\CompanyProjectLaby.csproj.CoreCompileInputs.cache
 C:\Users\patry\Desktop\.NetApp\CompanyProjectLaby\CompanyProjectLaby\obj\Debug\netcoreapp3.1\CompanyProjectLaby.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\patry\Desktop\.NetApp\CompanyProjectLaby\CompanyProjectLaby\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\patry\Desktop\.NetApp\CompanyProjectLaby\CompanyProjectLaby\obj\Debug\netcoreapp3.1\Razor\Views\Company\Add.cshtml.g.cs
